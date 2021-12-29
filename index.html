@@ -1,218 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My love</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.min.js" integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap-grid.min.css" integrity="sha512-Xj2sd25G+JgJYwo0cvlGWXoUekbLg5WvW+VbItCMdXrDoZRWcS/d40ieFHu77vP0dF5PK+cX6TIp+DsPfZomhw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap-reboot.min.css" integrity="sha512-ioOlrrQQ3fZN/A7N2rZVm6JXp/Lg7xtda9OaRKornjBcuTW/UqIhTlPyngcGQGrQTOhJgmSltKM4v3Ne03WPug==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script >
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My love</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.min.js"
+    integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap-grid.min.css"
+    integrity="sha512-Xj2sd25G+JgJYwo0cvlGWXoUekbLg5WvW+VbItCMdXrDoZRWcS/d40ieFHu77vP0dF5PK+cX6TIp+DsPfZomhw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap-reboot.min.css"
+    integrity="sha512-ioOlrrQQ3fZN/A7N2rZVm6JXp/Lg7xtda9OaRKornjBcuTW/UqIhTlPyngcGQGrQTOhJgmSltKM4v3Ne03WPug=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css"
+    integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js"
+    integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
     const diffDays = (date, otherDate) => Math.ceil(Math.abs(date - otherDate) / (1000 * 60 * 60 * 24));
-    console.log(diffDays(new Date('2021-11-12'), new Date()));  
-    window.onload = function() {
+    console.log(diffDays(new Date('2021-11-12'), new Date()));
+    window.onload = function () {
       var div = document.getElementById('abc');
 
-div.innerHTML = diffDays(new Date('2021-11-12'), new Date())+" days";
+      div.innerHTML = diffDays(new Date('2021-11-12'), new Date()) + " days";
     } 
-    </script>
-    <style type="text/css">
-body {
-  background: rgb(204,204,204); 
-}
-page {
-  background: white;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 0.5cm;
-  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
-}
-page[size="A4"] {  
-  width: 21cm;
-  height: 36.7cm; 
-}
-page[size="A4"][layout="landscape"] {
-  width: 29.7cm;
-  height: 21cm;  
-}
-page[size="A3"] {
-  width: 29.7cm;
-  height: 42cm;
-}
-page[size="A3"][layout="landscape"] {
-  width: 42cm;
-  height: 29.7cm;  
-}
-page[size="A5"] {
-  width: 14.8cm;
-  height: 21cm;
-}
-page[size="A5"][layout="landscape"] {
-  width: 21cm;
-  height: 14.8cm;  
-}
-@media print {
-  body, page {
-    margin: 0;
-    box-shadow: 0;
-  }
-}
+  </script>
+  <style type="text/css">
+    body {
+      background: rgb(204, 204, 204);
+    }
 
-    </style>
+    page {
+      background: white;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 0.5cm;
+      box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+    }
+
+    page[size="A4"] {
+      width: 21cm;
+      height: 36.7cm;
+    }
+
+    page[size="A4"][layout="landscape"] {
+      width: 29.7cm;
+      height: 21cm;
+    }
+
+    page[size="A3"] {
+      width: 29.7cm;
+      height: 42cm;
+    }
+
+    page[size="A3"][layout="landscape"] {
+      width: 42cm;
+      height: 29.7cm;
+    }
+
+    page[size="A5"] {
+      width: 14.8cm;
+      height: 21cm;
+    }
+
+    page[size="A5"][layout="landscape"] {
+      width: 21cm;
+      height: 14.8cm;
+    }
+
+    @media print {
+
+      body,
+      page {
+        margin: 0;
+        box-shadow: 0;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <page size="A4">
-       <div class="container">
-           <div class="row">
-               <div class="col-lg-12 text-center">
-                <h4>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM </h4>
-               </div>
-               <div class="col-lg-12 text-center">
-                <h5>Độc Lập - Tự Do - Hạnh Phúc</h5>
-                <h5>---------------</h5>
-               </div>
-            
-               <div class="col-lg-12 text-center mb-3">
-                <h5>HỢP ĐỒNG TÌNH YÊU  😍 😍</h5>
-               </div>
-               <div class="col-lg-10 ml-5" style="font-style: italic;">
-                Dựa trên cơ sở công bằng giữa trái tim với trái tim . Để đảm
-                bảo một tình yêu chân chính, bền vững và mãi mãi tươi đẹp. (From  💓💓 12/11/2021 💓💓  😂😂😂😂).
-               </div>
-               <div class="col-lg-10 text-right mt-3 ml-5" style="font-style: italic;">
-                Tokyo, ngày 26 tháng 11 năm 2021.
-              </div>
-              <div class="col-lg-10  mt-3 ml-5" style="font-size:18px">
-               <span style="font-weight:bold;font-style: italic;">-Tại:</span>  một bên Việt Nam, một bên Nhật Bản 😀😀😄
-                </div>
-                <div class="col-lg-10  mt-3 ml-5" style="font-size:18px">
-                    <span style="font-weight:bold;font-style: italic;">-Chúng tôi gồm:</span>
-                      một bên Nhật Bản (bên A), một bên Việt Nam (bên B)😀😀.
-                </div>
-                <div class="col-lg-10  mt-3 ml-5" style="font-size:18px">
-                    <span style="font-weight:bold;font-style: italic;">-Thông tin đầy đủ:</span>
-                     <ul>
-                         <li>Bên A:<ul>
-                             <li>Họ và tên: Trần Nguyễn Minh Anh</li>
-                             <li>Giới tính: Nam 😆.</li>
-                             <li>Sinh ngày: 24/05/2000.</li>
-                             <li>Quê quán: Phú Kim, Cát Trinh, Phù Cát, Bình Định.</li>
-                             <li> <a href="https://www.facebook.com/tuyen.minhnguyentran">Link Facebook</a></li>
-                         </ul>
-                            </li>
-                            <li>Bên B:<ul>
-                                <li>Họ và tên: Trần Thị Tuyết Minh.</li>
-                                <li>Giới tính: Nữ 😆😍.</li>
-                                <li>Sinh ngày: 15/06/2000. </li>
-                                <li> <a href="https://www.facebook.com/profile.php?id=100006968629230">Link Facebook</a></li>
-                                <li>Quê quán: Phú Kim, Cát Trinh, Phù Cát, Bình Định.</li>
-                            </ul>
-                               </li>
-                            
-                     </ul>
-                     <div class="col-lg-12" style="font-style: italic;">
-                       <span> Đã bàn bạc thông qua và đi đến thống nhất ký kết "hợp đồng
-tình yêu với nội dung: </span>
-<ul>
-    <li>Tạo một tình yêu bền đẹp (mãi bên nhau em nhé :v), hai bên phải thương yêu và nhường nhịn lẫn nhau. Bên B cần nhẹ tay với bên A　nếu xảy ra tranh chấp 😂😂. "</li>
-    <li>Luôn quan tâm và chăm sóc cho nhau.</li>
-    <li>Bên B luôn đúng :v (trừ những điều khoản liên quan đến hợp đồng).</li>
-    <li>Thời hạn yêu: không dự kiến được :))), nếu một trong hai bên thực hiện trái với hợp đồng, hoặc yêu người thứ 3, bên còn lại sẽ nhận toàn bộ tiền bảo hiểm tình yêu :v</li>
-    <li>Thông tin về bảo hiểm: <ul>
-        <li>Mỗi tháng 500k mỗi bên</li>
-        <li>Ngày bắt đầu: Từ lúc cả 2 bên đã đi làm và có lương. </li>
-    </ul></li>
-</ul>
+  <page size="A4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h4>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM </h4>
+        </div>
+        <div class="col-lg-12 text-center">
+          <h5>Độc Lập - Tự Do - Hạnh Phúc</h5>
+          <h5>---------------</h5>
+        </div>
+
+        <div class="col-lg-12 text-center mb-3">
+          <h5>HỢP ĐỒNG TÌNH YÊU 😍 😍</h5>
+        </div>
+        <div class="col-lg-10 ml-5" style="font-style: italic;">
+          Dựa trên cơ sở công bằng giữa trái tim với trái tim . Để đảm
+          bảo một tình yêu chân chính, bền vững và mãi mãi tươi đẹp. (From 💓💓 12/11/2021 💓💓 😂😂😂😂).
+        </div>
+        <div class="col-lg-10 text-right mt-3 ml-5" style="font-style: italic;">
+          Tokyo, ngày 26 tháng 11 năm 2021.
+        </div>
+        <div class="col-lg-10  mt-3 ml-5" style="font-size:18px">
+          <span style="font-weight:bold;font-style: italic;">-Tại:</span> một bên Việt Nam, một bên Nhật Bản 😀😀😄
+        </div>
+        <div class="col-lg-10  mt-3 ml-5" style="font-size:18px">
+          <span style="font-weight:bold;font-style: italic;">-Chúng tôi gồm:</span>
+          một bên Nhật Bản (bên A), một bên Việt Nam (bên B)😀😀.
+        </div>
+        <div class="col-lg-10  mt-3 ml-5" style="font-size:18px">
+          <span style="font-weight:bold;font-style: italic;">-Thông tin đầy đủ:</span>
+          <ul>
+            <li>Bên A:<ul>
+                <li>Họ và tên: Trần Nguyễn Minh Anh</li>
+                <li>Giới tính: Nam 😆.</li>
+                <li>Sinh ngày: 24/05/2000.</li>
+                <li>Quê quán: Phú Kim, Cát Trinh, Phù Cát, Bình Định.</li>
+                <li> <a href="https://www.facebook.com/tuyen.minhnguyentran">Link Facebook</a></li>
+              </ul>
+            </li>
+            <li>Bên B:<ul>
+                <li>Họ và tên: Trần Thị Tuyết Minh.</li>
+                <li>Giới tính: Nữ 😆😍.</li>
+                <li>Sinh ngày: 15/06/2000. </li>
+                <li> <a href="https://www.facebook.com/profile.php?id=100006968629230">Link Facebook</a></li>
+                <li>Quê quán: Phú Kim, Cát Trinh, Phù Cát, Bình Định.</li>
+              </ul>
+            </li>
+
+          </ul>
+          <div class="col-lg-12" style="font-style: italic;">
+            <span> Đã bàn bạc thông qua và đi đến thống nhất ký kết "hợp đồng
+              tình yêu với nội dung: </span>
+            <ul>
+              <li>Tạo một tình yêu bền đẹp (mãi bên nhau em nhé :v), hai bên phải thương yêu và nhường nhịn lẫn nhau.
+                Bên B cần nhẹ tay với bên A　nếu xảy ra tranh chấp 😂😂. "</li>
+              <li>Luôn quan tâm và chăm sóc cho nhau.</li>
+              <li>Bên B luôn đúng :v (trừ những điều khoản liên quan đến hợp đồng).</li>
+              <li>Thời hạn yêu: không dự kiến được :))), nếu một trong hai bên thực hiện trái với hợp đồng, hoặc yêu
+                người thứ 3, bên còn lại sẽ nhận toàn bộ tiền bảo hiểm tình yêu :v</li>
+              <li>Thông tin về bảo hiểm: <ul>
+                  <li>Mỗi tháng 500k mỗi bên</li>
+                  <li>Ngày bắt đầu: Từ lúc cả 2 bên đã đi làm và có lương. </li>
+                </ul>
+              </li>
+            </ul>
 
 
 
-                    </div>
-                    <div class="col-lg-12">Nếu hai bên đã đọc kĩ và thỏa thuận thì ký tên.</div>
-                </div>
+          </div>
+          <div class="col-lg-12">Nếu hai bên đã đọc kĩ và thỏa thuận thì ký tên.</div>
+        </div>
 
-<table style="width:100%">
-    <tbody>
-    <tr>
-    <td >
-    <p style="text-align:center" class="mt-5 "><strong>BÊN A</strong>
-        <img class="d-block mx-auto " style="" height="100px" width="100px" src="./3.png" alt="">
-    </p>
-    <p style="text-align:center; margin-top:10px" class="" ><strong></strong><em>Trần Nguyễn Minh Anh</em><strong></strong></p>
-    </td>
-    <td>
-        <td >
-            <p style="text-align:center" class="mt-5 "><strong>BÊN B</strong>
-                <img class="d-block mx-auto " style="" height="100px" width="100px" src="./2.png" alt="">
-            </p>
-            <p style="text-align:center; margin-top:10px" class="" ><strong></strong><em>Trần Thị Tuyết Minh</em><strong></strong></p>
-            </td>
-            <td>
-    </tr>
-    </tbody>
-    </table>
-   
-           </div>
-     
-       </div>
-       <div class="col-lg-12 text-center"><a href="https://wikici.com/tao-chu-ky-online">Link ký tên</a></div>
-       
-    </page>
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td>
+                <p style="text-align:center" class="mt-5 "><strong>BÊN A</strong>
+                  <img class="d-block mx-auto " style="" height="100px" width="100px" src="./3.png" alt="">
+                </p>
+                <p style="text-align:center; margin-top:10px" class=""><strong></strong><em>Trần Nguyễn Minh
+                    Anh</em><strong></strong></p>
+              </td>
+              <td>
+              <td>
+                <p style="text-align:center" class="mt-5 "><strong>BÊN B</strong>
+                  <img class="d-block mx-auto " style="" height="100px" width="100px" src="./2.png" alt="">
+                </p>
+                <p style="text-align:center; margin-top:10px" class=""><strong></strong><em>Trần Thị Tuyết
+                    Minh</em><strong></strong></p>
+              </td>
+              <td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+    </div>
+    <div class="col-lg-12 text-center"><a href="https://wikici.com/tao-chu-ky-online">Link ký tên</a></div>
+
+  </page>
   <div class="container">
-    
-     
+
+
 
 
     <body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-    <!-- ImageReady Slices (Untitled-1) -->
-    <div align="center">
-    &nbsp;<table class="ml-4" id="Table_01" width="700" height="500" border="0" cellpadding="0" cellspacing="0">
-        <tbody ><tr>
-            <td colspan="5">
-                <img src="./Tỏ Tình - Tạo Web tỏ tình_files/theme_01.gif" width="700" height="106" alt=""></td>
-                
-            </tr>
-        <tr>
-            <td rowspan="4">
-                <img src="./Tỏ Tình - Tạo Web tỏ tình_files/theme_02.gif" width="96" height="394" alt=""></td>
-            <td width="493" height="247" colspan="3" bgcolor="#FEFBFF" >
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 text-center " > ❤️❤️❤️ <span id="abc">15 days</span>  ❤️❤️❤️ </div>
-                    </div>
-                    
-                </div>
-                <img class="mt-3" width="100" height="100" src="./269961249_2961628170818280_7869995051437944837_n.jpg" alt="">
-            <p align="center" class="d-inline-block ml-5 mr-5"><font color=""><img border="0" src="./Tỏ Tình - Tạo Web tỏ tình_files/6.gif"><img border="0" src="./Tỏ Tình - Tạo Web tỏ tình_files/6.gif"><img border="0" src="./Tỏ Tình - Tạo Web tỏ tình_files/6.gif"></font></p>
-            <img class="mt-3" width="100" height="100" src="./1.jpg" alt="">
+      <!-- ImageReady Slices (Untitled-1) -->
+      <div align="center">
+        &nbsp;<table class="ml-4" id="Table_01" width="700" height="500" border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td colspan="5">
+                <img src="./Tỏ Tình - Tạo Web tỏ tình_files/theme_01.gif" width="700" height="106" alt="">
+              </td>
 
-        </td>
-            <td rowspan="4">
-                <img src="./Tỏ Tình - Tạo Web tỏ tình_files/theme_04.gif" width="111" height="394" alt=""></td>
-        </tr>
-        <tr>
-            <td colspan="3">
-                <img src="./Tỏ Tình - Tạo Web tỏ tình_files/theme_05.gif" width="493" height="55" alt=""></td>
-        </tr>
-        <tr>
-            <td rowspan="2">
-                <img src="./Tỏ Tình - Tạo Web tỏ tình_files/theme_06.gif" width="88" height="92" alt=""></td>
-            <td width="397" height="42" bgcolor="#F7F2EE"><font color="#FF00FF"><b><marquee>T.N.M.A ♥️♥️♥️♥️ T.T.T.M </marquee></b></font></td>
-            <td rowspan="2">
-                <img src="./Tỏ Tình - Tạo Web tỏ tình_files/theme_08.gif" width="8" height="92" alt=""></td>
-        </tr>
-        <tr>
-            <td>
-                <img src="./Tỏ Tình - Tạo Web tỏ tình_files/theme_09.gif" width="397" height="50" alt=""></td>
-        </tr>
-    </tbody></table>
-    </div>
-    <!-- End ImageReady Slices -->
-    
-    </body></html>
-  </div>
+            </tr>
+            <tr>
+              <td rowspan="4">
+                <img src="./Tỏ Tình - Tạo Web tỏ tình_files/theme_02.gif" width="96" height="394" alt="">
+              </td>
+              <td width="493" height="247" colspan="3" bgcolor="#FEFBFF">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-12 text-center "> ❤️❤️❤️ <span id="abc">15 days</span> ❤️❤️❤️ </div>
+                  </div>
+
+                </div>
+                <img class="mt-3" width="100" height="100" src="./269961249_2961628170818280_7869995051437944837_n.jpg"
+                  alt="">
+                <p align="center" class="d-inline-block ml-5 mr-5">
+                  <font color=""><img border="0" src="./Tỏ Tình - Tạo Web tỏ tình_files/6.gif"><img border="0"
+                      src="./Tỏ Tình - Tạo Web tỏ tình_files/6.gif"><img border="0"
+                      src="./Tỏ Tình - Tạo Web tỏ tình_files/6.gif"></font>
+                </p>
+                <img class="mt-3" width="100" height="100" src="./1.jpg" alt="">
+
+              </td>
+              <td rowspan="4">
+                <img src="./Tỏ Tình - Tạo Web tỏ tình_files/theme_04.gif" width="111" height="394" alt="">
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <img src="./Tỏ Tình - Tạo Web tỏ tình_files/theme_05.gif" width="493" height="55" alt="">
+              </td>
+            </tr>
+            <tr>
+              <td rowspan="2">
+                <img src="./Tỏ Tình - Tạo Web tỏ tình_files/theme_06.gif" width="88" height="92" alt="">
+              </td>
+              <td width="397" height="42" bgcolor="#F7F2EE">
+                <font color="#FF00FF"><b>
+                    <marquee>T.N.M.A ♥️♥️♥️♥️ T.T.T.M </marquee>
+                  </b></font>
+              </td>
+              <td rowspan="2">
+                <img src="./Tỏ Tình - Tạo Web tỏ tình_files/theme_08.gif" width="8" height="92" alt="">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="./Tỏ Tình - Tạo Web tỏ tình_files/theme_09.gif" width="397" height="50" alt="">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="row mt-4">
+          <div class="col-lg-6">
+            <img width="500px" src="./4.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <img width="500px" src="./6.jpg" alt="">
+          </div>
+        </div>
+      
+      </div>
+      <!-- End ImageReady Slices -->
+
+    </body>
+
+</html>
+</div>
 </body>
 
 </html>
